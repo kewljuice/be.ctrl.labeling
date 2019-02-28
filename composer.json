@@ -1,0 +1,11 @@
+{
+  "name": "kewljuice/be.ctrl.labeling",
+  "description": "CiviCRM labeling: Adds action to generate labels based on message templates",
+  "type": "civicrm-extension",
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "keywords": [
+    "CiviCRM"
+  ]
+}
