@@ -74,7 +74,7 @@ class CRM_Contact_Form_Task_Labeling extends CRM_Contact_Form_Task {
         'return' => ['msg_html'],
         'id' => $fv['template'],
       ]);
-      if (!$template['is_error']) {
+      if (!isset($template['is_error'])) {
         $content = $template['msg_html'];
       }
     } catch (Exception $e) {
@@ -101,7 +101,6 @@ class CRM_Contact_Form_Task_Labeling extends CRM_Contact_Form_Task {
     }
     // Call function to create labels.
     self::createLabel($rows, $fv['label_name']);
-    CRM_Utils_System::civiExit(1);
   }
 
   /**
